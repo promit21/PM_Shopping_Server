@@ -32,7 +32,7 @@ async function run() {
                 const limit = parseInt(req.query.limit) || 10;
                 const skip = (page - 1) * limit;
 
-                const { category, brand, minPrice, maxPrice } = req.query;
+                const { category, brandName, minPrice, maxPrice } = req.query;
 
                 const query = {};
 
@@ -40,8 +40,8 @@ async function run() {
                     query.category = category;
                 }
 
-                if (brand) {
-                    query.brand = brand;
+                if (brandName) {
+                    query.brandName = brandName;
                 }
 
                 if (minPrice && maxPrice) {

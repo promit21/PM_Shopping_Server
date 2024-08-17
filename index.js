@@ -51,7 +51,6 @@ async function run() {
                 if (brandName) {
                     query.brandName = brandName;
                 }
-
                 if (minPrice && maxPrice) {
                     query.price = { $gte: parseFloat(minPrice), $lte: parseFloat(maxPrice) };
                 } else if (minPrice) {

@@ -13,7 +13,7 @@ app.use(
             "https://react-private-route-4e09a.firebaseapp.com",
         ]
     })
-);
+)
 app.use(express.json());
 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.hm3ihus.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
